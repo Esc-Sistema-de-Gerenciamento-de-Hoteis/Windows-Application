@@ -29,27 +29,28 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            EmailTxt = new TextBox();
+            PasswordTxt = new TextBox();
             label1 = new Label();
             label2 = new Label();
             button1 = new Button();
             linkLabel1 = new LinkLabel();
             SuspendLayout();
             // 
-            // textBox1
+            // EmailTxt
             // 
-            textBox1.Location = new Point(62, 22);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(152, 23);
-            textBox1.TabIndex = 0;
+            EmailTxt.Location = new Point(62, 22);
+            EmailTxt.Name = "EmailTxt";
+            EmailTxt.Size = new Size(152, 23);
+            EmailTxt.TabIndex = 0;
             // 
-            // textBox2
+            // PasswordTxt
             // 
-            textBox2.Location = new Point(62, 57);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(152, 23);
-            textBox2.TabIndex = 1;
+            PasswordTxt.Location = new Point(62, 57);
+            PasswordTxt.Name = "PasswordTxt";
+            PasswordTxt.Size = new Size(152, 23);
+            PasswordTxt.TabIndex = 1;
+            PasswordTxt.UseSystemPasswordChar = true;
             // 
             // label1
             // 
@@ -89,7 +90,7 @@
             linkLabel1.TabStop = true;
             linkLabel1.Text = "Logar com o Google";
             // 
-            // Form1
+            // Login
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -98,12 +99,12 @@
             Controls.Add(button1);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(PasswordTxt);
+            Controls.Add(EmailTxt);
             FormBorderStyle = FormBorderStyle.Fixed3D;
             Icon = (Icon)resources.GetObject("$this.Icon");
             MaximizeBox = false;
-            Name = "Form1";
+            Name = "Login";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Autenticação";
             ResumeLayout(false);
@@ -112,8 +113,8 @@
 
         #endregion
 
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox EmailTxt;
+        private TextBox PasswordTxt;
         private Label label1;
         private Label label2;
         private Button button1;

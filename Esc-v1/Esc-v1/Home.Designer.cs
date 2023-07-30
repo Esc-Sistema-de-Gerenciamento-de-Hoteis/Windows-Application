@@ -28,21 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             menuStrip1 = new MenuStrip();
             menuToolStripMenuItem = new ToolStripMenuItem();
-            sobreToolStripMenuItem = new ToolStripMenuItem();
             administraçãoToolStripMenuItem = new ToolStripMenuItem();
             usuarioToolStripMenuItem = new ToolStripMenuItem();
-            perfilToolStripMenuItem = new ToolStripMenuItem();
-            quartoToolStripMenuItem = new ToolStripMenuItem();
             criarToolStripMenuItem = new ToolStripMenuItem();
             alterarToolStripMenuItem = new ToolStripMenuItem();
             editarToolStripMenuItem = new ToolStripMenuItem();
             excluirToolStripMenuItem = new ToolStripMenuItem();
+            perfilToolStripMenuItem = new ToolStripMenuItem();
             criarToolStripMenuItem1 = new ToolStripMenuItem();
             alterarToolStripMenuItem1 = new ToolStripMenuItem();
             editarToolStripMenuItem1 = new ToolStripMenuItem();
             exToolStripMenuItem = new ToolStripMenuItem();
+            quartoToolStripMenuItem = new ToolStripMenuItem();
+            sobreToolStripMenuItem = new ToolStripMenuItem();
+            logoutToolStripMenuItem = new ToolStripMenuItem();
             menuStrip1.SuspendLayout();
             SuspendLayout();
             // 
@@ -61,15 +63,9 @@
             menuToolStripMenuItem.Size = new Size(50, 20);
             menuToolStripMenuItem.Text = "Menu";
             // 
-            // sobreToolStripMenuItem
-            // 
-            sobreToolStripMenuItem.Name = "sobreToolStripMenuItem";
-            sobreToolStripMenuItem.Size = new Size(49, 20);
-            sobreToolStripMenuItem.Text = "Sobre";
-            // 
             // administraçãoToolStripMenuItem
             // 
-            administraçãoToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { usuarioToolStripMenuItem, perfilToolStripMenuItem, quartoToolStripMenuItem });
+            administraçãoToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { usuarioToolStripMenuItem, perfilToolStripMenuItem, quartoToolStripMenuItem, logoutToolStripMenuItem });
             administraçãoToolStripMenuItem.Name = "administraçãoToolStripMenuItem";
             administraçãoToolStripMenuItem.Size = new Size(96, 20);
             administraçãoToolStripMenuItem.Text = "Administração";
@@ -81,6 +77,31 @@
             usuarioToolStripMenuItem.Size = new Size(180, 22);
             usuarioToolStripMenuItem.Text = "Usuario";
             // 
+            // criarToolStripMenuItem
+            // 
+            criarToolStripMenuItem.Name = "criarToolStripMenuItem";
+            criarToolStripMenuItem.Size = new Size(109, 22);
+            criarToolStripMenuItem.Text = "Criar";
+            criarToolStripMenuItem.Click += criarToolStripMenuItem_Click;
+            // 
+            // alterarToolStripMenuItem
+            // 
+            alterarToolStripMenuItem.Name = "alterarToolStripMenuItem";
+            alterarToolStripMenuItem.Size = new Size(109, 22);
+            alterarToolStripMenuItem.Text = "Alterar";
+            // 
+            // editarToolStripMenuItem
+            // 
+            editarToolStripMenuItem.Name = "editarToolStripMenuItem";
+            editarToolStripMenuItem.Size = new Size(109, 22);
+            editarToolStripMenuItem.Text = "Editar";
+            // 
+            // excluirToolStripMenuItem
+            // 
+            excluirToolStripMenuItem.Name = "excluirToolStripMenuItem";
+            excluirToolStripMenuItem.Size = new Size(109, 22);
+            excluirToolStripMenuItem.Text = "Excluir";
+            // 
             // perfilToolStripMenuItem
             // 
             perfilToolStripMenuItem.DropDownItems.AddRange(new ToolStripItem[] { criarToolStripMenuItem1, alterarToolStripMenuItem1, editarToolStripMenuItem1, exToolStripMenuItem });
@@ -88,59 +109,48 @@
             perfilToolStripMenuItem.Size = new Size(180, 22);
             perfilToolStripMenuItem.Text = "Perfil";
             // 
+            // criarToolStripMenuItem1
+            // 
+            criarToolStripMenuItem1.Name = "criarToolStripMenuItem1";
+            criarToolStripMenuItem1.Size = new Size(109, 22);
+            criarToolStripMenuItem1.Text = "Criar";
+            // 
+            // alterarToolStripMenuItem1
+            // 
+            alterarToolStripMenuItem1.Name = "alterarToolStripMenuItem1";
+            alterarToolStripMenuItem1.Size = new Size(109, 22);
+            alterarToolStripMenuItem1.Text = "Alterar";
+            // 
+            // editarToolStripMenuItem1
+            // 
+            editarToolStripMenuItem1.Name = "editarToolStripMenuItem1";
+            editarToolStripMenuItem1.Size = new Size(109, 22);
+            editarToolStripMenuItem1.Text = "Editar";
+            // 
+            // exToolStripMenuItem
+            // 
+            exToolStripMenuItem.Name = "exToolStripMenuItem";
+            exToolStripMenuItem.Size = new Size(109, 22);
+            exToolStripMenuItem.Text = "Excluir";
+            // 
             // quartoToolStripMenuItem
             // 
             quartoToolStripMenuItem.Name = "quartoToolStripMenuItem";
             quartoToolStripMenuItem.Size = new Size(180, 22);
             quartoToolStripMenuItem.Text = "Quarto";
             // 
-            // criarToolStripMenuItem
+            // sobreToolStripMenuItem
             // 
-            criarToolStripMenuItem.Name = "criarToolStripMenuItem";
-            criarToolStripMenuItem.Size = new Size(180, 22);
-            criarToolStripMenuItem.Text = "Criar";
+            sobreToolStripMenuItem.Name = "sobreToolStripMenuItem";
+            sobreToolStripMenuItem.Size = new Size(49, 20);
+            sobreToolStripMenuItem.Text = "Sobre";
             // 
-            // alterarToolStripMenuItem
+            // logoutToolStripMenuItem
             // 
-            alterarToolStripMenuItem.Name = "alterarToolStripMenuItem";
-            alterarToolStripMenuItem.Size = new Size(180, 22);
-            alterarToolStripMenuItem.Text = "Alterar";
-            // 
-            // editarToolStripMenuItem
-            // 
-            editarToolStripMenuItem.Name = "editarToolStripMenuItem";
-            editarToolStripMenuItem.Size = new Size(180, 22);
-            editarToolStripMenuItem.Text = "Editar";
-            // 
-            // excluirToolStripMenuItem
-            // 
-            excluirToolStripMenuItem.Name = "excluirToolStripMenuItem";
-            excluirToolStripMenuItem.Size = new Size(180, 22);
-            excluirToolStripMenuItem.Text = "Excluir";
-            // 
-            // criarToolStripMenuItem1
-            // 
-            criarToolStripMenuItem1.Name = "criarToolStripMenuItem1";
-            criarToolStripMenuItem1.Size = new Size(180, 22);
-            criarToolStripMenuItem1.Text = "Criar";
-            // 
-            // alterarToolStripMenuItem1
-            // 
-            alterarToolStripMenuItem1.Name = "alterarToolStripMenuItem1";
-            alterarToolStripMenuItem1.Size = new Size(180, 22);
-            alterarToolStripMenuItem1.Text = "Alterar";
-            // 
-            // editarToolStripMenuItem1
-            // 
-            editarToolStripMenuItem1.Name = "editarToolStripMenuItem1";
-            editarToolStripMenuItem1.Size = new Size(180, 22);
-            editarToolStripMenuItem1.Text = "Editar";
-            // 
-            // exToolStripMenuItem
-            // 
-            exToolStripMenuItem.Name = "exToolStripMenuItem";
-            exToolStripMenuItem.Size = new Size(180, 22);
-            exToolStripMenuItem.Text = "Excluir";
+            logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
+            logoutToolStripMenuItem.Size = new Size(180, 22);
+            logoutToolStripMenuItem.Text = "Logout";
+            logoutToolStripMenuItem.Click += logoutToolStripMenuItem_Click;
             // 
             // Home
             // 
@@ -148,8 +158,11 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(menuStrip1);
+            FormBorderStyle = FormBorderStyle.Fixed3D;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             MainMenuStrip = menuStrip1;
             Name = "Home";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Home";
             menuStrip1.ResumeLayout(false);
             menuStrip1.PerformLayout();
@@ -174,5 +187,6 @@
         private ToolStripMenuItem exToolStripMenuItem;
         private ToolStripMenuItem quartoToolStripMenuItem;
         private ToolStripMenuItem sobreToolStripMenuItem;
+        private ToolStripMenuItem logoutToolStripMenuItem;
     }
 }

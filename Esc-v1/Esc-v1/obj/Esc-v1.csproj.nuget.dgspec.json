@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\caios\\Documents\\GitHub\\ESC-APP\\Esc-v1\\Esc-v1\\Esc-v1.csproj": {}
+    "C:\\Users\\caios\\Documents\\GitHub\\Windows-Application\\Esc-v1\\Esc-v1\\Esc-v1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\caios\\Documents\\GitHub\\ESC-APP\\Esc-v1\\Esc-v1\\Esc-v1.csproj": {
+    "C:\\Users\\caios\\Documents\\GitHub\\Windows-Application\\Esc-v1\\Esc-v1\\Esc-v1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\caios\\Documents\\GitHub\\ESC-APP\\Esc-v1\\Esc-v1\\Esc-v1.csproj",
+        "projectUniqueName": "C:\\Users\\caios\\Documents\\GitHub\\Windows-Application\\Esc-v1\\Esc-v1\\Esc-v1.csproj",
         "projectName": "Esc-v1",
-        "projectPath": "C:\\Users\\caios\\Documents\\GitHub\\ESC-APP\\Esc-v1\\Esc-v1\\Esc-v1.csproj",
+        "projectPath": "C:\\Users\\caios\\Documents\\GitHub\\Windows-Application\\Esc-v1\\Esc-v1\\Esc-v1.csproj",
         "packagesPath": "C:\\Users\\caios\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\caios\\Documents\\GitHub\\ESC-APP\\Esc-v1\\Esc-v1\\obj\\",
+        "outputPath": "C:\\Users\\caios\\Documents\\GitHub\\Windows-Application\\Esc-v1\\Esc-v1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\caios\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,24 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "Microsoft.AspNet.WebApi.Client": {
+              "target": "Package",
+              "version": "[5.2.9, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
+            "RestSharp": {
+              "target": "Package",
+              "version": "[110.2.0, )"
+            },
+            "System.Net.Http": {
+              "target": "Package",
+              "version": "[4.3.4, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

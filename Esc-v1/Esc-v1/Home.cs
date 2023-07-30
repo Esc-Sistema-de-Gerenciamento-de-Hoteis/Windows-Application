@@ -16,5 +16,16 @@ namespace Esc_v1
         {
             InitializeComponent();
         }
+
+        private void criarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Criacao_Usuario janela = new Criacao_Usuario();
+            janela.Show();
+        }
+
+        private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Restart();
+        }
     }
 }
